@@ -47,5 +47,7 @@ while True:
         break
     elif key == ord('s'):
         status = cv.imwrite('selected_img.jpeg',imgOutput)
+        if status:
+            print("Image saved")
 
 cv.destroyAllWindows()

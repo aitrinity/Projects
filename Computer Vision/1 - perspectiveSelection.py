@@ -45,5 +45,7 @@ while True:
     key = cv.waitKey(1)
     if key == 27:
         break
+    elif key == ord('s'):
+        status = cv.imwrite('selected_img.jpeg',imgOutput)
 
 cv.destroyAllWindows()
